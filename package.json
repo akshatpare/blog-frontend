@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy":"https://blog-backend-8yjaeo2nw-akshatpare.vercel.app",
+  "proxy":"https://blog-backend-6q93wbj96-akshatpare.vercel.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
