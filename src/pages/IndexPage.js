@@ -4,10 +4,7 @@ import {useEffect, useState} from "react";
 export default function IndexPage() {
   const [posts,setPosts] = useState([]);
   useEffect(() => {
-    fetch('https://blog-backend-6q93wbj96-akshatpare.vercel.app/post', {
-      mode: 'cors',
-      credentials: 'include'
-    }).then(response => {
+    fetch('https://blog-backend-6q93wbj96-akshatpare.vercel.app/post').then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });
