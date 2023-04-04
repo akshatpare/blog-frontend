@@ -17,7 +17,7 @@ export default function CreatePost() {
     data.set('content', content);
     data.set('file', files[0]);
     ev.preventDefault();
-    const response = await fetch('https://blog-backend-6q93wbj96-akshatpare.vercel.app/post', {
+    const response = await fetch('https://mern-blog-backend-k4wm.onrender.com/post', {
       method: 'POST',
       body: data,
       credentials: 'include',

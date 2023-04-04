@@ -9,7 +9,7 @@ export default function PostPage() {
   const {userInfo} = useContext(UserContext);
   const {id} = useParams();
   useEffect(() => {
-    fetch(`https://blog-backend-6q93wbj96-akshatpare.vercel.app/post/${id}`)
+    fetch(`https://mern-blog-backend-k4wm.onrender.com/post/${id}`)
       .then(response => {
         response.json().then(postInfo => {
           setPostInfo(postInfo);
@@ -35,7 +35,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img src={`https://blog-backend-6q93wbj96-akshatpare.vercel.app/${postInfo.cover}`} alt=""/>
+        <img src={`https://mern-blog-backend-k4wm.onrender.com/${postInfo.cover}`} alt=""/>
       </div>
       <div className="content" dangerouslySetInnerHTML={{__html:postInfo.content}} />
     </div>
